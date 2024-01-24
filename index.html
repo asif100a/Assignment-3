@@ -42,32 +42,66 @@
     <!-- ===================================== Started the Header ================================== -->
     <header>
         <nav>
-            <div class="">
-                <div
-                    class="carousel w-[90%] lg:w-[80%] h-auto lg:h-[550px] ml-[5%] mr-[5%] lg:ml-[10%] lg:mr-[10%] rounded-2xl mt-20 lg:mt-24">
-                    <div id="slide1" class="carousel-item relative w-full">
-                        <img src="resources/Images/1.png" class="w-full" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide3" class="btn btn-circle">❮</a>
-                            <a href="#slide2" class="btn btn-circle">❯</a>
+            <div class="navbar bg-base-100 w-[90%] ml-[5%] mr-[5%] lg:w-[80%] lg:ml-[10%] lg:mr-[10%]">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
                         </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                            <li><a class="font-bold">About</a></li>
+                            <li><a class="font-bold">Pages</a></li>
+                            <li><a class="font-bold">Blog</a></li>
+                            <li><a class="font-bold">Contact</a></li>
+                        </ul>
                     </div>
-                    <div id="slide2" class="carousel-item relative w-full">
-                        <img src="resources/Images/4.png" class="w-full" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide1" class="btn btn-circle">❮</a>
-                            <a href="#slide3" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide3" class="carousel-item relative w-full">
-                        <img src="resources/Images/hockey-player-during-match-grass.png" class="w-full" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide2" class="btn btn-circle">❮</a>
-                            <a href="#slide1" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-
+                    <a class="font-extrabold text-4xl">Hockey<span class="text-[#FF4240]">'</span>s</a>
                 </div>
+                <div class="navbar hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                        <li><a class="font-bold">About</a></li>
+                        <li><a class="font-bold">Pages</a></li>
+                        <li><a class="font-bold">Blog</a></li>
+                        <li><a class="font-bold">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-4">
+                    <img src="resources/Images/Frame-search.svg" alt="" class="hidden  lg:block">
+                    <a class="btn bg-[#FF4240] text-white text-xl font-bold">Get Ticket</a>
+                </div>
+            </div>
+
+            <div
+                class="carousel w-[90%] lg:w-[80%] h-auto lg:h-[550px] ml-[5%] mr-[5%] lg:ml-[10%] lg:mr-[10%] rounded-2xl mt-20 lg:mt-20">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="resources/Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="resources/Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="resources/Images/hockey-player-during-match-grass.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
             </div>
         </nav>
     </header>
@@ -155,7 +189,7 @@
                     <div class="mt-16 mx-auto w-[90%]  ml-[5%] mr-[5%] lg:ml-0 lg:mr-0 lg:w-[572px] h-[244px] lg:h-[340px] rounded-2xl bg-contain bg-no-repeat"
                         style="background-image: url('resources/Images/2.png')">
                         <div class="bg-black bg-opacity-50 bg-contain rounded-2xl">
-                            <div class="flex flex-col justify-center ml-6 w-auto h-[244px] lg:h-[340px]">
+                            <div class="flex flex-col justify-center ml-6 w-[88%] h-[244px] lg:h-[340px]">
                                 <h3 class="text-white text-3xl font-extrabold">Junior Program</h3>
                                 <p class="text-base text-white font-medium mt-4 mb-6 w-auto lg:w-[495px]">
                                     USA Hockey's junior
@@ -172,9 +206,10 @@
                     <div class="mt-16 w-[90%] ml-[5%] mr-[5%] lg:ml-0 lg:mr-0 lg:w-[572px] h-[244px] lg:h-[340px] rounded-2xl bg-contain bg-no-repeat"
                         style="background-image: url('resources/Images/3.png')">
                         <div class="bg-black bg-opacity-50 bg-contain rounded-2xl">
-                            <div class="flex flex-col justify-center ml-6 w-auto h-[244px] lg:h-[340px]">
+                            <div class="flex flex-col justify-center ml-6 w-[88%] h-[244px] lg:h-[340px]">
                                 <h3 class="text-white text-3xl font-extrabold">Junior Program</h3>
-                                <p class="text-base text-white font-medium mt-4 mb-6 w-auto lg:w-[495px]">USA Hockey's junior
+                                <p class="text-base text-white font-medium mt-4 mb-6 w-auto lg:w-[495px]">USA Hockey's
+                                    junior
                                     program provides opportunities for players ages 16-to-20 to hone and enhance their
                                     skills and is an important part of the organization's overall efforts related to
                                     player development. </p>
@@ -188,10 +223,11 @@
                     <!-- Photo 3[large] -->
                     <div class="mt-16 mx-auto lg:mt-4 w-[90%] lg:w-[100%] h-[344px] lg:h-[450px] rounded-2xl bg-no-repeat lg:col-span-2 "
                         style="background-image: url('resources/Images/4.png')">
-                        <div class="bg-black bg-opacity-50 lg:w-[97%] h-[344px] lg:h-[450px] rounded-2xl">
+                        <div class="bg-black bg-opacity-50 lg:w-[96%] h-[344px] lg:h-[450px] rounded-2xl">
                             <div class="flex flex-col justify-end ml-6 py-8 w-auto lg:w-full h-[244px] lg:h-[450px]">
                                 <h3 class="text-white text-3xl font-extrabold">Junior Program</h3>
-                                <p class="text-base text-white font-medium mt-4 mb-6 w-auto lg:w-[495px]">USA Hockey's junior
+                                <p class="text-base text-white font-medium mt-4 mb-6 w-auto lg:w-[495px]">USA Hockey's
+                                    junior
                                     program provides opportunities for players ages 16-to-20 to hone and enhance their
                                     skills and is an important part of the organization's overall efforts related to
                                     player development. </p>
@@ -477,7 +513,7 @@
             </div>
 
             <hr class="mt-8 lg:mt-12 w-[90%] ml-[5%] mr-[5%] lg:w-[80%] lg:ml-[10%] lg:mr-[10%]">
-            
+
             <!-- ==========Contact & Input Feild========= -->
             <div class="w-[90%] ml-[5%] mr-[5%] lg:w-[80%] lg:ml-[10%] lg:mr-[10%] mt-24 flex-1  lg:flex">
 
@@ -511,33 +547,34 @@
                 <div>
                     <div class="mx-auto ml-12 mt-8 lg:mt-0">
                         <form class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                            <label for="text">Your Name <br> 
+                            <label for="text">Your Name <br>
                                 <input type="text" placeholder="Enter your full name" class="input bg-[#13131805] 
                                 w-[90%] lg:w-[340px] h-16 mt-4" />
                             </label>
-                            
-                            <label for="text">Your Email <br> 
+
+                            <label for="text">Your Email <br>
                                 <input type="text" placeholder="Enter your email" class="input bg-[#13131805] 
                                 w-[90%] lg:w-[340px] h-16 mt-4" />
                             </label>
-                            
-                            <label for="text">Subject <br> 
+
+                            <label for="text">Subject <br>
                                 <input type="text" placeholder="Enter your subject" class="input bg-[#13131805] 
                                 w-[90%] lg:w-[340px] h-16 mt-4" />
                             </label>
-                            
-                            <label for="text">Phone Number <br> 
+
+                            <label for="text">Phone Number <br>
                                 <input type="text" placeholder="Enter your phone number" class="input bg-[#13131805] 
                                 w-[90%] lg:w-[340px] h-16 mt-4" />
                             </label>
-                            
-                            
+
+
                         </form>
                     </div>
                     <div class="mt-4 ml-12">
                         <form>
-                            <label for="text">Message <br> 
-                                <input type="text" placeholder="Write your message" class="input bg-[#13131805] mt-4  lg:pt-[45px] lg:pb-[325px] w-[90%] lg:w-[700px]" />
+                            <label for="text">Message <br>
+                                <input type="text" placeholder="Write your message"
+                                    class="input bg-[#13131805] mt-4  lg:pt-[45px] lg:pb-[325px] w-[90%] lg:w-[700px]" />
                             </label>
                         </form>
                         <br>
@@ -565,48 +602,49 @@
     <!-- ===================================== Started the Footer ================================== -->
     <footer class="footer p-10 bg-[#131318] text-base-content mt-28 w-[90] lg:w-full mx-auto">
         <aside class="mx-auto">
-          <h3 class="text-white text-3xl font-extrabold">Get In Touch</h3>
-          <p class="text-base text-white font-medium mt-4 mb-6 w-auto lg:w-[495px] opacity-70">A good touch is being able to receive and <br>
-             move the ball to either right or left, which will <br>
-              indirectly create space between the player and a defender.</p>
+            <h3 class="text-white text-3xl font-extrabold">Get In Touch</h3>
+            <p class="text-base text-white font-medium mt-4 mb-6 w-auto lg:w-[495px] opacity-70">A good touch is being
+                able to receive and <br>
+                move the ball to either right or left, which will <br>
+                indirectly create space between the player and a defender.</p>
 
             <div class="flex gap-4">
                 <img src="resources/Images/Frame-mail.png" alt="">
                 <p class="text-base text-white font-medium opacity-70">hockeys@support.com</p>
-            </div> 
+            </div>
             <div class="flex gap-4">
                 <img src="resources/Images/Frame -call.png" alt="">
                 <p class="text-base text-white font-medium opacity-70">(+62) 123-321-543</p>
             </div>
-        </aside> 
+        </aside>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 mx-auto">
             <div class="grid grid-cols-2 gap-40">
                 <div class="flex flex-col justify-center items-center gap-4">
-                    <header class="text-lg font-bold text-white">Company</header> 
+                    <header class="text-lg font-bold text-white">Company</header>
                     <a class="link link-hover text-white opacity-70">About us</a>
                     <a class="link link-hover text-white opacity-70">Leadership</a>
                     <a class="link link-hover text-white opacity-70">Careers</a>
                     <a class="link link-hover text-white opacity-70">News & Article</a>
                     <a class="link link-hover text-white opacity-70">Legal Notice</a>
-                </div> 
-                  <div class="flex flex-col justify-center items-center gap-4">
-                    <header class="text-lg font-bold text-white">Support</header> 
+                </div>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <header class="text-lg font-bold text-white">Support</header>
                     <a class="link link-hover text-white opacity-70">Help Center</a>
                     <a class="link link-hover text-white opacity-70">FAQ</a>
                     <a class="link link-hover text-white opacity-70">Ticket Support</a>
                     <a class="link link-hover text-white opacity-70">Contact Us</a>
-                  </div> 
+                </div>
             </div>
-              <div class="flex flex-col justify-center items-center gap-4 mx-auto">
-                <header class="text-lg font-bold text-white">Services</header> 
+            <div class="flex flex-col justify-center items-center gap-4 mx-auto">
+                <header class="text-lg font-bold text-white">Services</header>
                 <a class="link link-hover text-white opacity-70">Academy</a>
                 <a class="link link-hover text-white opacity-70">Group Lesson</a>
                 <a class="link link-hover text-white opacity-70">Private Lesson</a>
                 <a class="link link-hover text-white opacity-70">Hockeys for kids</a>
                 <a class="link link-hover text-white opacity-70">Hockeys for Adult</a>
-              </div>
+            </div>
         </div>
-      </footer>
+    </footer>
     <!-- ===================================== Ended the Footer ================================== -->
 </body>
 
